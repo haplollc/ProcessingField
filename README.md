@@ -1,5 +1,7 @@
 # ProcessingField
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jcbuilds)
+
 A SwiftUI progress field: a grid of marks whose sizes describe one soft shape that drifts, folds and breathes while your app is busy.
 
 <p align="center">
