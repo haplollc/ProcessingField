@@ -1,7 +1,5 @@
 # ProcessingField
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jcbuilds)
-
 A SwiftUI progress field: a grid of marks whose sizes describe one soft shape that drifts, folds and breathes while your app is busy.
 
 <p align="center">
@@ -15,6 +13,12 @@ A SwiftUI progress field: a grid of marks whose sizes describe one soft shape th
 The mark centres never move. They sit on a fixed square grid, and only each mark's size and its ink change, which is what makes this read as one surface working rather than as particles flying about. What the sizes describe is a single mass: marks inside it stand at full size, marks outside fade to specks but are never absent, and the outline between them wobbles as the shape wanders.
 
 It is one `Canvas` inside one `TimelineView`, with no view per mark. It draws no background and takes no hits, so it drops onto anything as an overlay in one line.
+
+<p align="center">
+  <a href="https://buymeacoffee.com/jcbuilds"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200"></a>
+  <br>
+  <sub>If ProcessingField is useful to you, a coffee keeps it going.</sub>
+</p>
 
 ## Requirements
 
