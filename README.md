@@ -1,24 +1,57 @@
 # ProcessingField
-
-A SwiftUI progress field: a grid of marks whose sizes describe one soft shape that drifts, folds and breathes while your app is busy.
+A SwiftUI progress field where a grid of marks describes one soft shape that drifts, folds and breathes while your app is busy.
 
 <p align="center">
   <img src="Docs/demo.gif" alt="A grid of dots on an iPhone screen. One soft mass swells to fill the field, pulls into a small knot and opens back out, first read in a fine mist of marks and then in coarse bold ones." width="300">
 </p>
 
 <p align="center">
-  <sub><a href="Docs/demo.mp4">The same clip as an mp4</a>, which holds the faint outer specks better than a GIF can &middot; what is being driven is <code>reach</code> and then <code>pitch</code></sub>
+  <img src="https://img.shields.io/badge/Swift-5.9-F05138?logo=swift&logoColor=white" alt="Swift 5.9" />
+  <img src="https://img.shields.io/badge/iOS-15+-000000?logo=apple&logoColor=white" alt="iOS 15+" />
+  <img src="https://img.shields.io/badge/SPM-compatible-brightgreen" alt="Swift Package Manager" />
+  [![GitHub stars](https://img.shields.io/github/stars/haplollc/ProcessingField?style=flat)](https://github.com/haplollc/ProcessingField/stargazers)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 </p>
-
-The mark centres never move. They sit on a fixed square grid, and only each mark's size and its ink change, which is what makes this read as one surface working rather than as particles flying about. What the sizes describe is a single mass: marks inside it stand at full size, marks outside fade to specks but are never absent, and the outline between them wobbles as the shape wanders.
-
-It is one `Canvas` inside one `TimelineView`, with no view per mark. It draws no background and takes no hits, so it drops onto anything as an overlay in one line.
 
 <p align="center">
   <a href="https://buymeacoffee.com/jcbuilds"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200"></a>
   <br>
   <sub>If ProcessingField is useful to you, a coffee keeps it going.</sub>
 </p>
+
+**Install**
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/haplollc/ProcessingField", from: "1.0.0")
+]
+```
+
+**Try it**
+
+```swift
+import SwiftUI
+import ProcessingField
+
+struct ContentView: View {
+    var body: some View {
+        ProcessingField()
+    }
+}
+```
+
+If this is useful, a star helps others find it.
+
+---
+
+<sub><a href="Docs/demo.mp4">The same clip as an mp4</a>, which holds the faint outer specks better than a GIF can &middot; what is being driven is <code>reach</code> and then <code>pitch</code></sub>
+</p>
+
+The mark centres never move. They sit on a fixed square grid, and only each mark's size and its ink change, which is what makes this read as one surface working rather than as particles flying about. What the sizes describe is a single mass: marks inside it stand at full size, marks outside fade to specks but are never absent, and the outline between them wobbles as the shape wanders.
+
+It is one `Canvas` inside one `TimelineView`, with no view per mark. It draws no background and takes no hits, so it drops onto anything as an overlay in one line.
+
+
 
 ## Requirements
 
@@ -170,3 +203,19 @@ Every mark in the grid is drawn every frame. Outside the shape they are small an
 ## Credit
 
 Built at Haplo LLC. Released under the [MIT licence](LICENSE).
+---
+
+## More from Haplo
+
+More open source from [Haplo](https://github.com/haplollc), built by the same solo developer:
+
+- [ThinkingOrbs](https://github.com/haplollc/ThinkingOrbs): dotted, honestly-3D loading indicators for AI and agent interfaces in SwiftUI. Nine hand-tuned designs, two tuned sizes.
+- [Minted](https://github.com/haplollc/Minted): turn any SVG into a physically-lit 3D gold medallion for SwiftUI.
+- [Vesalius](https://github.com/haplollc/Vesalius): a map of your codebase for Claude Code, an on-device code graph with an MCP server, a CLI, a Mac app and a VS Code extension.
+- [MuscleMapKit](https://github.com/haplollc/MuscleMapKit): interactive 3D muscle map for iOS. Shade muscles by how hard they were worked, spin the body, tap a group.
+- [Gepetto](https://github.com/haplollc/Gepetto): a browser agent for iOS and macOS that a person can take over at any time. Real WKWebView, small on-device models, a native SwiftUI panel.
+- [ClayGlobe](https://github.com/haplollc/ClayGlobe): a claymorphic 3D globe for SwiftUI that plants a waving flag on every country you visit.
+- [Mirage](https://github.com/haplollc/Mirage): one-stop on-device diffusion image-generation engine for iOS / macOS / visionOS.
+- [SiriGlass](https://github.com/haplollc/SiriGlass): the Siri drop from iOS 27, for SwiftUI. Liquid Glass that pours out of the Dynamic Island and lights up with your voice.
+- [Scrubbers](https://github.com/haplollc/Scrubbers): twelve sliders you will want to touch, for SwiftUI. One view, one enum.
+- [KoiPond](https://github.com/haplollc/KoiPond): a living koi pond for SwiftUI. Koi glide over any view, lily pads drift on top, and a Metal shader ripples and refracts it all.
