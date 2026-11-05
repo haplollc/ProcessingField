@@ -9,8 +9,8 @@ A SwiftUI progress field where a grid of marks describes one soft shape that dri
   <img src="https://img.shields.io/badge/Swift-5.9-F05138?logo=swift&logoColor=white" alt="Swift 5.9" />
   <img src="https://img.shields.io/badge/iOS-15+-000000?logo=apple&logoColor=white" alt="iOS 15+" />
   <img src="https://img.shields.io/badge/SPM-compatible-brightgreen" alt="Swift Package Manager" />
-  [![GitHub stars](https://img.shields.io/github/stars/haplollc/ProcessingField?style=flat)](https://github.com/haplollc/ProcessingField/stargazers)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+  <a href="https://github.com/haplollc/ProcessingField/stargazers"><img src="https://img.shields.io/github/stars/haplollc/ProcessingField?style=flat" alt="GitHub stars" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
 </p>
 
 <p align="center">
@@ -45,7 +45,6 @@ If this is useful, a star helps others find it.
 ---
 
 <sub><a href="Docs/demo.mp4">The same clip as an mp4</a>, which holds the faint outer specks better than a GIF can &middot; what is being driven is <code>reach</code> and then <code>pitch</code></sub>
-</p>
 
 The mark centres never move. They sit on a fixed square grid, and only each mark's size and its ink change, which is what makes this read as one surface working rather than as particles flying about. What the sizes describe is a single mass: marks inside it stand at full size, marks outside fade to specks but are never absent, and the outline between them wobbles as the shape wanders.
 
@@ -203,6 +202,7 @@ Every mark in the grid is drawn every frame. Outside the shape they are small an
 ## Credit
 
 Built at Haplo LLC. Released under the [MIT licence](LICENSE).
+
 ---
 
 ## More from Haplo
